@@ -1,5 +1,5 @@
 app.config(function($stateProvider,$urlRouterProvider){
-	//$urlRouterProvider.otherwise("/store");//默认跳转页面
+	$urlRouterProvider.otherwise("/store");//默认跳转页面
 	$stateProvider
 		.state("store",{
 			url:"/store",
