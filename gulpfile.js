@@ -2,7 +2,7 @@ var gulp = require("gulp"),
 	connect = require("gulp-connect"),
 	cssMinify = require("gulp-minify-css"),  //css压缩
 	rename = require("gulp-rename"), //重命名
-	proxy = require("gulp-connect-proxy"),
+	Proxy = require("gulp-connect-proxy"),
 	//合并文件
 	concat =require("gulp-concat"),
 	//压缩js
@@ -38,12 +38,12 @@ var gulp = require("gulp"),
 		connect.server({
 			port : "2222",
 			livereload : true,
-			root: "./app/dev/"/*,
+			root: "./app/dev/",
 			middleware:function(connect,opt){
-				opt.route = "server/data";
-				var proxy = new Proxy(opt)
+				opt.route = "server/data/";
+				var proxy = new Proxy(opt);
 				return [proxy]
-			}*/
+			}
 		})
 	})
 

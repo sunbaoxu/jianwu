@@ -87,3 +87,77 @@ body {
   font-size: 12px;
   line-height: 30px;
 }
+.home_cont .cont_footer {
+  height: 50px;
+  text-align: center;
+}
+.home_cont .cont_footer button {
+  display: inline-block;
+  margin-top: 7px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+}
+.footer {
+  height: 120px;
+}
+.footer > div {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+.footer > div .flex {
+  color: #fff;
+  width: 90%;
+  height: 70%;
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  margin: 0 auto;
+}
+.footer > div .flex > div {
+  width: 0;
+  -webkit-box-flex: 1;
+}
+.footer > div .flex > div a {
+  color: #fff;
+}
+.footer > div .flex > div.left .media a {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 1px;
+  overflow: hidden;
+}
+.footer > div .flex > div.left .media a:last-child {
+  margin-left: 20px;
+}
+.footer > div .flex > div.left .media a img {
+  display: block;
+  width: 100%;
+}
+.footer > div .flex > div.middle > div {
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: vertical;
+}
+.footer > div .flex > div.middle > div .links {
+  width: 60%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+}
+.footer > div .flex > div.middle > div .gray {
+  font-size: 10px;
+}
