@@ -37,7 +37,7 @@ var gulp = require("gulp"),
 	gulp.watch([
 	"./app/dev/public/css/*.scss",
 	"./app/dev/public/less/*.scss",
-	"./app/dev/public/less/**/*.scss",
+	"./app/dev/public/less/**/**/*.scss",
 	],["css","reload"])//关联文件
 
 	gulp.watch([

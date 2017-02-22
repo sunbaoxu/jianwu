@@ -1,0 +1,48 @@
+.home_cont{
+	.cont_title{
+		text-align:center;
+		line-height:44px;
+		font-size:18px;
+	}
+	.HC_head{
+		font-weight:bold;
+		line-height:40px;
+		font-size:18px;
+		padding-left:10px;
+		span{
+			font-weight:normal;
+			font-size:14px;
+		}
+	}
+	.clearfix{
+		.info{
+			a{
+				font-size:10px;
+				color:#000;
+			}
+		}
+		.p{
+			display:-webkit-box;
+			-webkit-box-pack:justify;
+			border-bottom:1px solid #999;
+			line-height:20px;
+			.price{
+				font-weight:bold;
+			}
+			.fav{
+				font-size:12px;
+				margin-right:10px;
+				color:#999;
+				span{
+					margin:0 5px;
+				}
+			}
+		}
+
+		.one {
+			font-size:14px;
+			line-height:20px;
+		}
+		
+	}
+}

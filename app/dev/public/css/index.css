@@ -32,9 +32,55 @@ body {
   text-align: center;
   color: #fff;
 }
-.home_banner .carousel-inner {
+.home_banner {
+  width: 94%;
+  margin: 0 auto;
+}
+.home_banner .item {
+  width: 100%;
   overflow: hidden;
 }
-.home_banner .carousel-inner img {
+.home_banner .item img {
+  display: blocck;
   width: 100%;
+}
+.home_cont .cont_title {
+  text-align: center;
+  line-height: 44px;
+  font-size: 18px;
+}
+.home_cont .HC_head {
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.home_cont .HC_head span {
+  font-weight: normal;
+  font-size: 14px;
+}
+.home_cont .clearfix .info a {
+  font-size: 10px;
+  color: #000;
+}
+.home_cont .clearfix .p {
+  display: -webkit-box;
+  -webkit-box-pack: justify;
+  border-bottom: 1px solid #999;
+  line-height: 20px;
+}
+.home_cont .clearfix .p .price {
+  font-weight: bold;
+}
+.home_cont .clearfix .p .fav {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #999;
+}
+.home_cont .clearfix .p .fav span {
+  margin: 0 5px;
+}
+.home_cont .clearfix .one {
+  font-size: 14px;
+  line-height: 20px;
 }
