@@ -1,6 +1,12 @@
 app.config(function($stateProvider,$urlRouterProvider){
-	$urlRouterProvider.otherwise("/store");//默认跳转页面
+	$urlRouterProvider.otherwise("/home");//默认跳转页面
 	$stateProvider
+		.state("home",{
+			url:"/home",
+			templateUrl:"controller/home/home.html",
+			controller : "homeCtrl"
+			//template :" 这是绿色页面"
+		})
 		.state("store",{
 			url:"/store",
 			templateUrl:"controller/store/store.html",
@@ -10,7 +16,8 @@ app.config(function($stateProvider,$urlRouterProvider){
 		//第一个参数是 URL 或者 URL 正则规则。第二个参数是路由配置对象。
 		.state("space",{
 			url:"/space",
-			templateUrl:"controller/space/space.html"
+			templateUrl:"controller/space/space.html",
+			controller : "spaceCtrl"
 		})
 		.state("story",{
 			url:"/story",

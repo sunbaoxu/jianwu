@@ -1,0 +1,40 @@
+@import "reset.css";
+body {
+  padding-top: 50px;
+}
+.header .header_logo img {
+  width: 30px;
+  display: inline-block;
+}
+.header .header_logo span {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+}
+.header_ren {
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  right: 20px;
+  line-height: 50px;
+}
+.header_ren i {
+  color: #fff;
+  font-size: 18px;
+}
+.header_title {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  right: 20px;
+  left: 0;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+.home_banner .carousel-inner {
+  overflow: hidden;
+}
+.home_banner .carousel-inner img {
+  width: 100%;
+}

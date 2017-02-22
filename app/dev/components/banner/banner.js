@@ -1,9 +1,9 @@
-app.directive("myHeader",function(){
+app.directive("myBanner",function(){
 	return {
 		scope : {
 			backBtn : "@"
 		},
-		templateUrl:"./components/header/header.html",
+		templateUrl:"./components/banner/banner.html",
 		restrict : "E",
 		replace : true,
 		controller: function($scope){

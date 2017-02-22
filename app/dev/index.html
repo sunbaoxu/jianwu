@@ -2,20 +2,34 @@
 <html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>匠心</title>
-	<style src="lib/bootstrap/css/bootstrap.min.css"></style>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/index.min.css">
 </head>
  <body>
- <div class="wrap">
+ <div class="wrap" ng-controller="myController">
 	<div ui-view></div>
  </div>
 	<script src="lib/angular.min.js"></script>
 	<script src="lib/angular-ui-router.min.js"></script>
+	<script src="lib/jquery.min.3.1.1.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.min.js"></script>
 	<script src="index.js"></script>
 	<script src="config/router.js"></script>
-<!-- 页面-->
+<!-- 组件-->
 	
 	<script src="components/header/header.js"></script>
+	<script src="components/banner/banner.js"></script>
+<!-- 组件-->
+<!-- 页面-->
+	<script src="controller/home/home.js"></script>
+	<script src="controller/register/register.js"></script>
+	<script src="controller/space/space.js"></script>
+	<script src="controller/store/store.js"></script>
+	<script src="controller/story/story.js"></script>
 <!-- 页面-->
 </body> 
 </html>

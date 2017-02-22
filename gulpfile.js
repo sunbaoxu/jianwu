@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 		.pipe(scss())
 		.pipe( gulp.dest("./app/dev/public/css/"))
 		.pipe( cssMinify() )
-		.pipe(rename("lotour.min.css"))
+		.pipe(rename("index.min.css"))
 		.pipe( gulp.dest("./app/dev/public/css/"))
 	})
 
