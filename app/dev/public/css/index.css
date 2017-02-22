@@ -59,6 +59,9 @@ body {
   font-weight: normal;
   font-size: 14px;
 }
+.home_cont .clearfix li {
+  margin-top: 10px;
+}
 .home_cont .clearfix .info a {
   font-size: 10px;
   color: #000;
@@ -81,6 +84,6 @@ body {
   margin: 0 5px;
 }
 .home_cont .clearfix .one {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 30px;
 }

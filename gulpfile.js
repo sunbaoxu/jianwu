@@ -2,9 +2,14 @@ var gulp = require("gulp"),
 	connect = require("gulp-connect"),
 	cssMinify = require("gulp-minify-css"),  //css压缩
 	rename = require("gulp-rename"), //重命名
+	proxy = require("gulp-connect-proxy"),
+	//合并文件
+	concat =require("gulp-concat"),
+	//压缩js
+	uglify =require("gulp-uglify"),
 	rev =require("gulp-rev"),
 	scss =require("gulp-less");
-
+//解析css
 	gulp.task("css",function(){
 		gulp.src("./app/dev/public/css/*.scss")
 		.pipe(scss())
@@ -13,13 +18,16 @@ var gulp = require("gulp"),
 		.pipe(rename("index.min.css"))
 		.pipe( gulp.dest("./app/dev/public/css/"))
 	})
+//压缩js
+///*
+
 
 	gulp.task("reload",function(){
 		gulp.src([
-			"./app/dev/public/css/*.scss",
+			"./app/dev/public/css/*.css",
 			"./app/dev/*.html",
 			"./app/dev/**/**/*.html",
-			"./app/dev/public/js/*.js"
+			"./app/dist/*.js"
 			])
 		.pipe(connect.reload())
 	})
@@ -30,7 +38,12 @@ var gulp = require("gulp"),
 		connect.server({
 			port : "2222",
 			livereload : true,
-			root: "./app/dev/"
+			root: "./app/dev/"/*,
+			middleware:function(connect,opt){
+				opt.route = "server/data";
+				var proxy = new Proxy(opt)
+				return [proxy]
+			}*/
 		})
 	})
 
@@ -48,5 +61,8 @@ var gulp = require("gulp"),
 	gulp.watch([
 	"./app/dev/*.js",
 	"./app/dev/**/*.js",
+	"./app/dev/**/**/*.js",
 	],["reload"])//关联文件
+
+
 	gulp.task("default",["css","webserver"])

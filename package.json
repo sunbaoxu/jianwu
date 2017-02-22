@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sunbaoxu/jianwu/issues"
   },
-  "homepage": "https://github.com/sunbaoxu/jianwu#readme"
+  "homepage": "https://github.com/sunbaoxu/jianwu#readme",
+  "devDependencies": {
+    "gulp-connect-proxy": "^0.3.1"
+  }
 }
