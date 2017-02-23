@@ -50,14 +50,14 @@ var gulp = require("gulp"),
 	})
 
 	//开启服务器
-	/*gulp.task("mock",function(){
+	gulp.task("mock",function(){
 		gulp.src('.')
-	    .pipe(webserver({
+	    .pipe(mockServer({
 	      allowCrossOrigin: true,
 	      port: 8090
 	    }));
 	})
-*/
+
 	gulp.watch([
 	"./app/dev/public/css/*.scss",
 	"./app/dev/public/less/*.scss",
@@ -78,4 +78,4 @@ var gulp = require("gulp"),
 	],["reload"])//关联文件
 
 
-	gulp.task("default",["css","webserver"])
+	gulp.task("default",["css","webserver","mock"])

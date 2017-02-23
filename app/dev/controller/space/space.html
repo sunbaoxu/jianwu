@@ -1,5 +1,20 @@
 <my-header></my-header>
 <div class="home_cont">
-	<space-cont space-json="space_json"></space-cont>
+	<div>
+		<ul class="clearfix">
+	      <li class="product-thumb col-lg-3 col-md-3 col-sm-4   col-xs-6" ng-repeat="m in space_json">
+	        <div class="box">
+	          <a href="javascript:;">
+	            <div class="content">
+	                <img src="//{{m.thumb}}-bigger" class="img-responsive" alt="{{m.intro}}">
+	            </div>
+	          </a>
+	          <div class="info">
+	            <div class="one ">{{m.name}}</div>
+	          </div>
+	        </div>
+	      </li>
+	    </ul>
+	</div>
 </div>
 <my-footer></my-footer>

@@ -1,3 +1,32 @@
 <my-header></my-header>
-<my-content></my-content>
+<div class="home_cont">
+	<div class="story_left">
+		<ul>
+			<li ng-repeat="m in story_json">
+				<header class="storyCont_title">
+					<div class="SCT_left">
+						<dl>
+							<dt><img src="//assets.jiangwoo.com/uploads%2F5f2628ba7527bf455d81c2f8cc11d3ee-jiangwoo.jpg-avator" alt=""></dt>
+							<dd>
+								<h4>小将</h4>
+								<time>{{m.updated_at | dataFilter}}</time>
+							</dd>
+						</dl>
+					</div>
+					<div class="SCT_right"><span>{{m.kind_name}}</span></div>
+				</header>
+				<div class="storyCont_cont">
+					<dl>
+						<dt><img src="{{m.thumb}}" alt=""></dt>
+						<dd>
+							<h4>{{m.title}}</h4>
+							<p>{{m.description}}</p>
+						</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="story_right"></div>
+</div>
 <my-footer></my-footer>
