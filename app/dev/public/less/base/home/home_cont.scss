@@ -17,11 +17,26 @@
 	.clearfix{
 		li{
 			margin-top:10px;
+			.box{
+				&>a{
+					display:block;
+					
+					.content{
+						width:100%;
+						height:100%;
+						overflow:hidden;
+						img{
+							display:block;
+						}
+					}
+				}
+			}
 		}
 		.info{
 			a{
 				font-size:10px;
 				color:#000;
+
 			}
 		}
 		.p{

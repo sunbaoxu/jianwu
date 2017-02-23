@@ -5,7 +5,6 @@ app.config(function($stateProvider,$urlRouterProvider){
 			url:"/home",
 			templateUrl:"controller/home/home.html",
 			controller : "homeCtrl"
-			//template :" 这是绿色页面"
 		})
 		.state("store",{
 			url:"/store",
