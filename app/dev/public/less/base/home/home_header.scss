@@ -36,6 +36,10 @@
 		font-size:18px;
 	}
 }
+.navbar-brand{
+	position:relative;
+	z-index:1000;
+}
 .header_title{
 	position:absolute;
 	top:0px;

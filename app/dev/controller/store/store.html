@@ -1,5 +1,9 @@
 <my-header></my-header>
 <div class="home_cont">
-	<store-cont store-json="store_json"></store-cont>
+	<div class="store_nav">
+		<store-nav></store-nav>
+		<div ui-view><store-cont store-json="store_json"></store-cont></div>
+	</div>
+	
 </div>
 <my-footer></my-footer>

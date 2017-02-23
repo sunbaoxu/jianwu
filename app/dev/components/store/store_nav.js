@@ -1,9 +1,9 @@
-app.directive("myHeader",function(){
+app.directive("storeNav",function(){
 	return {
 		scope : {
-			backBtn : "@"
+			
 		},
-		templateUrl:"./components/header/header.html",
+		templateUrl:"./components/store/store_nav.html",
 		restrict : "E",
 		replace : true,
 		controller: function($scope){
