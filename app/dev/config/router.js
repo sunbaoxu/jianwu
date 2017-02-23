@@ -31,14 +31,14 @@ app.config(function($stateProvider,$urlRouterProvider){
 			templateUrl:"controller/register/register.html",
 			controller : "registerCtrl"
 		})
-		.state("store.quan",{
-			url:"/store.quan",
-			templateUrl:"controller/store/store_quan.html",
-			controller : "store_quanCtrl"
-		})
 		.state("store.visitor",{
 			url:"/store.visitor",
 			templateUrl:"controller/store/store_visitor.html",
 			controller : "store_visitorCtrl"
+		})
+		.state("store.quan",{
+			url:"/store.quan",
+			templateUrl:"components/store/store_quan.html",
+			controller : "store_quanCtrl"
 		})
 })

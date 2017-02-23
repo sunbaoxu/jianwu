@@ -244,12 +244,18 @@ body {
 .store_nav {
   padding: 0 20px;
   border-bottom: 1px solid #cce;
+  position: relative;
+}
+.store_nav .store_navback {
+  height: 40px;
 }
 .store_nav nav {
   width: 100%;
   height: 40px;
   display: -webkit-box;
   -webkit-box-align: center;
+  position: absolute;
+  top: 0;
 }
 .store_nav nav a {
   display: block;

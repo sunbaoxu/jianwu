@@ -6,6 +6,7 @@ var gulp = require("gulp"),
 	//合并文件
 	concat =require("gulp-concat"),
 	//压缩js
+	mockServer = require("gulp-mock-server"),
 	uglify =require("gulp-uglify"),
 	rev =require("gulp-rev"),
 	scss =require("gulp-less");
@@ -48,6 +49,15 @@ var gulp = require("gulp"),
 		})
 	})
 
+	//开启服务器
+	/*gulp.task("mock",function(){
+		gulp.src('.')
+	    .pipe(webserver({
+	      allowCrossOrigin: true,
+	      port: 8090
+	    }));
+	})
+*/
 	gulp.watch([
 	"./app/dev/public/css/*.scss",
 	"./app/dev/public/less/*.scss",
