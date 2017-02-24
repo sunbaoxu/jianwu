@@ -33,12 +33,17 @@ app.config(function($stateProvider,$urlRouterProvider){
 		})
 		.state("store.visitor",{
 			url:"/store.visitor",
-			templateUrl:"controller/store/store_visitor.html",
+			templateUrl:"controller/store/big/store_visitor.html",
 			controller : "store_visitorCtrl"
 		})
 		.state("store.quan",{
 			url:"/store.quan",
-			templateUrl:"components/store/store_quan.html",
+			templateUrl:"controller/store/big/store_quan.html",
 			controller : "store_quanCtrl"
+		})
+		.state("store.fen",{
+			url:"/store.fen",
+			templateUrl:"controller/store/xiao/store_fen.html",
+			controller : "store_fenCtrl"
 		})
 })

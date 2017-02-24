@@ -249,18 +249,18 @@ body {
 .store_nav .store_navback {
   height: 40px;
 }
-.store_nav nav {
+.store_nav .nav_title {
   width: 100%;
   height: 40px;
   position: absolute;
   top: 0;
 }
-.store_nav nav.nav_two a {
+.store_nav .nav_title.nav_two a {
   width: 31%;
   margin: 0;
   border: 1px solid #ccc;
 }
-.store_nav nav a {
+.store_nav .nav_title a {
   float: left;
   margin: 0 20px;
   height: 100%;
@@ -270,15 +270,14 @@ body {
   border-bottom: 2px solid transparent;
   text-decoration: none;
 }
-.store_nav nav a.active {
+.store_nav .nav_title a.active {
   color: #000;
   font-weight: bold;
   border-bottom: 2px solid #000;
 }
-.store_nav nav a.on {
+.store_nav .nav_title a.red {
   color: #000;
-  font-weight: bold;
-  border-bottom: 2px solid #000;
+  background: red;
 }
 .home_cont {
   height: 100%;
