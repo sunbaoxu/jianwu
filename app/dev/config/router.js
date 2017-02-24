@@ -46,4 +46,14 @@ app.config(function($stateProvider,$urlRouterProvider){
 			templateUrl:"controller/store/xiao/store_fen.html",
 			controller : "store_fenCtrl"
 		})
+		.state("store.feature",{
+			url:"/store.feature",
+			templateUrl:"controller/store/xiao/store_feature.html",
+			controller : "store_fenCtrl"
+		})
+		.state("store.texture",{
+			url:"/store.texture",
+			templateUrl:"controller/store/xiao/store_texture.html",
+			controller : "store_fenCtrl"
+		})
 })

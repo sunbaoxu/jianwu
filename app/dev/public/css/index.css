@@ -242,7 +242,7 @@ body {
   font-size: 14px;
 }
 .store_nav {
-  padding: 0 20px;
+  padding: 0 5%;
   border-bottom: 1px solid #cce;
   position: relative;
 }
@@ -250,13 +250,13 @@ body {
   height: 40px;
 }
 .store_nav .nav_title {
-  width: 100%;
+  width: 90%;
   height: 40px;
   position: absolute;
   top: 0;
 }
 .store_nav .nav_title.nav_two a {
-  width: 31%;
+  width: 33.3%;
   margin: 0;
   border: 1px solid #ccc;
 }
@@ -366,4 +366,18 @@ body {
   height: 676px;
   top: 0;
   min-width: 320px;
+}
+.storeXiao {
+  padding: 0 30px;
+}
+.storeXiao nav {
+  margin-top: 10px;
+  text-align: center;
+}
+.storeXiao nav a {
+  display: inline-block;
+  border: 1px solid green;
+  border-radius: 10px;
+  padding: 4px 8px;
+  margin: 6px 16px;
 }
